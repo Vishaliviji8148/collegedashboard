@@ -1,0 +1,21 @@
+import { Users } from "lucide-react";
+
+function StatCard({ title, count, icon: Icon, color }) {
+  return (
+    <div className="stat-card">
+      <div
+        className="stat-icon"
+        style={{ backgroundColor: color }}
+      >
+        <Icon size={25} />
+      </div>
+
+      <div>
+        <h3>{title}</h3>
+        <h2>{count}</h2>
+      </div>
+    </div>
+  );
+}
+
+export default StatCard;
